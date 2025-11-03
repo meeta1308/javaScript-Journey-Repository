@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #bdcfd6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.quoteGenerator {
+  width: 80%;
+  min-height: 45%;
+  max-width: 500px;
+  background: linear-gradient(-45deg, #327cdde8, rgba(125, 66, 233, 0.689));
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+}
+
+.quoteDiv {
+  height: auto;
+  font-size: 19px;
+}
+.author {
+  width: 50%;
+  height: auto;
+}
+button {
+  max-width: 100px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: none;
+  background-color: #327cddc6;
+  color: #e9e6e6;
+  transition: all 0.2s ease;
+}
+button:hover {
+  box-shadow: 0 0 10px #0f1ab8, 0 0 20px #3c0b59;
+  transform: scale(1.05);
+}

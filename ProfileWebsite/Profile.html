@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link rel="stylesheet" href="Profile.css" />
+  </head>
+  <body>
+    <div class="full-body">
+      <nav class="navbar">
+        <a href="#" class="anchor" onclick="showPage('Profie')">Profile</a>
+        <a href="#" class="anchor" onclick="showPage('Qualification')"
+          >Qualification</a
+        >
+        <a href="#" class="anchor" onclick="showPage('Project')">Project</a>
+      </nav>
+      <div class="content">
+        <div id="Profie" class="page">
+          <section class="sect">
+            <div class="image">
+              <img src="/jsJourney/weatherWebsite/other.png" alt="" />
+            </div>
+            <div class="para">
+              <p class="name">Meeta <span> Creative Technologist</span></p>
+              <p class="discription">
+                I'm Meeta, a hands-on creative technologist who blends playful
+                design with precise logic. I build mascot-style interfaces that
+                react, wink, and dance—because UI should feel alive.
+              </p>
+            </div>
+          </section>
+        </div>
+        <div id="Qualification" class="page" style="display: none">
+          <div class="qualification-card">
+            <h2>Qualifications</h2>
+            <h3>🎓 BCA – Bachelor of Computer Applications</h3>
+            <p><strong>University:</strong> Kurukshetra University, Haryana</p>
+            <p><strong>Year:</strong> 2026</p>
+            <p><strong>CGPA:</strong>9.2</p>
+            <p>
+              <strong>Focus:</strong> Programming, Web Development, Database
+              Management
+            </p>
+            <div class="skills">
+              <h2>Skills</h2>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+                <li>REACT.JS</li>
+                <li>ANGULAR.JS</li>
+                <li>NODE.JS</li>
+                <li>EXPRESS.JS</li>
+                <li>MONGO DB</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="Project" class="page" style="display: none">
+          <h2>Projects</h2>
+          <ul>
+            <li>Weather Website</li>
+            <li>Voice Changer</li>
+            <li>Quiz Website</li>
+            <li>To-Do List</li>
+            <li>Currency Changer</li>
+            <li>Qr Generator</li>
+            <li>Music Player</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="Profile.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(181, 212, 225, 0.773);
+}
+.outerBody {
+  width: 90%;
+  height: 90%;
+  background-color: rgba(21, 21, 48, 0.931);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  gap: 10px;
+}
+#text {
+  padding: 5px;
+  resize: none;
+  font-size: 1.5rem;
+  min-width: 30%;
+  width: 90%;
+  height: 60%;
+  color: white;
+  background-color: black;
+  border-radius: 8px;
+  border: none;
+}
+.counter {
+  width: 100%;
+  height: 25%;
+  padding: 10px;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.counterPart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.word,
+.length {
+  font-size: 1.7em;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  color: white;
+  font-weight: lighter;
+}
+.first {
+  width: 15%;
+}
+.second {
+  width: 19%;
+}
+.third {
+  width: 25%;
+}
+.fourth {
+  width: 25%;
+}

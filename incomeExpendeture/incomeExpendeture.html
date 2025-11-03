@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Income Expendeture counter</title>
+    <link rel="stylesheet" href="incomeExpendeture.css" />
+  </head>
+  <body>
+    <div class="outerBody">
+      <div class="topSection">
+        <h2>MONTHLY EXPENSE TRACKER</h2>
+        <div class="topSectionData">
+          <section class="part1">
+            <p class="monthlyIncome">Monthly Income</p>
+            <p class="income">&#8377; 0</p>
+          </section>
+          <section class="part2">
+            <p class="monthlyExpense">Monthly Expense</p>
+            <p class="expense">&#8377; 0</p>
+          </section>
+          <section class="part3">
+            <p class="monthlyBalance">Balance</p>
+            <p class="balance">&#8377; 0</p>
+          </section>
+        </div>
+      </div>
+      <div class="bottomSection">
+        <div class="firstPart">
+          <h2>ADD NEW</h2>
+          <table>
+            <tr>
+              <td class="firstRadio">
+                <input
+                  type="radio"
+                  id="expenseCheckbox"
+                  name="tracker"
+                  checked
+                  class="expenseRadio"
+                  style="text-align: center; vertical-align: middle"
+                />
+                <label for="expenseCheckbox">Expense</label>
+              </td>
+              <td class="secondRadio">
+                <input
+                  type="radio"
+                  id="incomeCheckbox"
+                  class="incomeRadio"
+                  name="tracker"
+                  style="text-align: center; vertical-align: middle"
+                />
+                <label for="incomeCheckbox">Income</label>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="secondPart">
+          <p class="amountPara">Amount</p>
+          <table>
+            <tr>
+              <td>
+                <input
+                  type="text"
+                  name="amount"
+                  placeholder="Enter amount"
+                  class="textInput"
+                />
+              </td>
+              <td><button class="tableButton">Add</button></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="incomeExpendeture.js"></script>
+  </body>
+</html>

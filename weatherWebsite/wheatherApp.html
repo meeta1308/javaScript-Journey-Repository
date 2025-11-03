@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheather App</title>
+    <link rel="stylesheet" href="wheatherApp.css">
+</head>
+<body>
+    <p class="before_loading">🎇Welcome to our weather check website✨🎉</p>
+    <h1 style="display: none;" class="heading">Find Weather Information💦😊</h1>
+    <div class="fullPage" style="display: none;">
+        <div class="searchBar">
+            <input type="text" name="city" class="cityName" placeholder="Enter city name">
+            <button class="btn"> <img src="searchLogo.png"></button>
+        </div>
+        <div class="wheather">
+            <img src="clear.jpg" class="wheatherImg">
+            <p class="temp"> 33°C</p>
+            <p class="city">Jind</p>
+            <div class="details">
+                <div class="col">
+                    <img src="humidity.jpg" class="humidity">
+                    <p class="humidityPercent"> 35%</p>
+                    
+                    <p class="humidityPara">Humadity</p>
+                </div>
+            
+                 <div class="col">
+                    
+                    <img src="windImage.png" class="windImg">
+                     <p class="WindSpeed">3m/s</p>
+                    
+                    <p class="WindPara">Wind</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="wheatherApp.js"></script>
+</body>
+</html>

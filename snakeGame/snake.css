@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  height: 100vh;
+  width: 100vw;
+  background-color: #41a67e;
+}
+.snakeBoard {
+  width: 80vmin;
+  height: 70vmin;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(18, 1fr);
+  box-shadow: 2px 2px 12px #43463c, -2px -2px 12px #33352e;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+.reset,
+.arrows {
+  color: #091119e0;
+  width: 6rem;
+  height: 2.6rem;
+  font-size: 1.4rem;
+  display: flex;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  box-shadow: 0px 0px 12px #2e302a;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.reset:hover,
+.arrows:hover {
+  box-shadow: inset -2px -2px 8px #2e302b;
+  transform: scale(1.03);
+  font-size: small;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60vmin;
+  height: 10vmin;
+  font-size: 1.8rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 700;
+}
+.hide {
+  display: none;
+}
+.snakeHead {
+  background-color: #bf092f;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #08322e;
+}
+.food {
+  border-radius: 50%;
+  background-color: #cd2c58;
+  box-shadow: 0 0 10px #25050e;
+}
+#div0 {
+  background-color: #3b0d77;
+  box-shadow: 0 0 10px #17153e;
+}
+.arrow-group {
+  width: 80vmin;
+  display: none;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 5px;
+}
+.arrows {
+  width: 15vmin;
+}
+@media (max-width: 900px) {
+  .show {
+    display: grid;
+  }
+}
+.scoreCard {
+  font-size: 3vmin;
+  text-align: center;
+}
+.hurrah {
+  font-size: 10vmin;
+  color: #bf092f;
+  text-align: center;
+}
+.againPlay {
+  width: 8rem;
+}

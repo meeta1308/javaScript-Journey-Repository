@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(205, 220, 226);
+}
+.outerBody {
+  width: 35vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* height: 12%; */
+  min-height: 12%;
+  border-radius: 8px;
+  text-align: center;
+}
+.microsoft {
+  background-color: #2d2c2c;
+  color: white;
+  font-size: 0.8em;
+}
+.amazon {
+  background-color: #f6bd68;
+  color: black;
+  font-size: 0.7em;
+  font-weight: 600;
+  border: 1.4px solid rgb(153, 155, 156);
+}
+.slack {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  font-size: 0.8em;
+  border: 1px solid rgb(235, 239, 240);
+}
+.facebook {
+  background-color: rgb(24, 119, 242);
+  color: white;
+  font-size: 0.8em;
+  border: 1px solid skyblue;
+}
+.logoContainer i {
+  font-size: 0.9rem;
+}
+.microsoft i {
+  background: conic-gradient(
+    green 0deg,
+    green 90deg,
+    orange 90deg,
+    orange 180deg,
+    skyblue 180deg,
+    skyblue 270deg,
+    red 270deg,
+    red 360deg
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.slack i {
+  background: conic-gradient(
+    green 0deg,
+    green 90deg,
+    orange 90deg,
+    orange 180deg,
+    red 180deg,
+    red 270deg,
+    skyblue 270deg,
+    skyblue 360deg
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 450px) {
+  .logoContainer {
+    height: auto;
+  }
+}
+@media screen and (max-width: 150px) {
+  .logoContainer {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  .logoContainer {
+    font-size: 1.5rem;
+    max-width: 37vw;
+  }
+  .logoContainer i {
+    font-size: 1.5rem;
+  }
+}

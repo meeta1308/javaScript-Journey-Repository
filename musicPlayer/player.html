@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeetaVerse👑</title>
+    <link rel="shortcut icon" href="musicLogo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="player.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="welcome">
+      <img src="musicLogo.png" />
+      <h2 class="entry">
+        <span class="title">MeetaVerse👑</span> your universe of music
+      </h2>
+    </div>
+    <div class="full-body" style="display: none">
+      <nav class="navbar">
+        <div class="leftmenu" onclick="back()" title="Back">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="rightmenu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      <div class="imageDiv">
+        <!-- <img src="musicBackground.webp" id="image" /> -->
+      </div>
+      <div class="Text">
+        <h1 class="songName"></h1>
+        <p class="singer"></p>
+        <select
+          name="songs"
+          id="Selection"
+          class="selection"
+          title="Selcet Song"
+        >
+          <!-- <option value="songOption">Big-Men</option> -->
+        </select>
+      </div>
+      <audio id="Audio">
+        <source src="Muchh.mp3" type="audio/mpeg" />
+      </audio>
+      <input type="range" value="0" id="Range" />
+      <footer class="Footer">
+        <div
+          class="footerleft"
+          onclick="updateSongLeftFooter()"
+          title="Previous"
+        >
+          <i class="fa-solid fa-angles-left"></i>
+        </div>
+        <div class="footermiddle" onclick="playPause()" title="Play">
+          <i class="fa-solid fa-play" id="playCtrl"></i>
+        </div>
+        <div class="footerright" onclick="updateSongRightFooter()" title="Next">
+          <i class="fa-solid fa-angles-right"></i>
+        </div>
+      </footer>
+    </div>
+    <script src="player.js"></script>
+  </body>
+</html>

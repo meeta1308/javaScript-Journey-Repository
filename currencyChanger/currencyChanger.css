@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #2f5755;
+  background-size: cover;
+}
+.changer {
+  min-width: 35vw;
+  max-width: 80vw;
+  height: 70vh;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 2rem;
+  background: #870f6bec;
+  box-shadow: 8px 9px 15px rgba(59, 25, 25, 0.8),
+    inset 10px 5px 15px rgba(27, 10, 10, 0.8);
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 8px;
+}
+h1 {
+  padding: 7px;
+  font-size: 3rem;
+  color: #95b5b3;
+  text-align: center;
+  border-bottom: 3px solid rgb(90, 84, 84);
+}
+.entry_para {
+  margin: 5px 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.dropdown {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 2.5rem;
+}
+.arrow {
+  font-size: 1rem;
+  width: 2rem;
+  height: auto;
+  object-fit: cover;
+  transform: rotate(90deg);
+}
+.from {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #2f5755b5;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+}
+.to {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #2f5755b5;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+}
+.flag {
+  width: 3rem;
+  height: auto;
+  object-fit: cover;
+  margin-right: 0.5rem;
+}
+option {
+  font-size: 1rem;
+  color: #2f5755;
+  background-color: #cac1c1;
+}
+.changer_select {
+  border-radius: 2rem;
+  width: 4rem;
+  height: 2rem;
+  background-color: #cac1c1a3;
+}
+.formInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.amount_Div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.amount_Div input {
+  width: 9rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  text-align: center;
+  border: 2px solid #2f5755b5;
+  border-radius: 2rem;
+  outline: none;
+  background-color: #cac1c180;
+  box-shadow: 5px 5px 15px rgba(59, 25, 25, 0.8),
+    inset 6px 5px 8px rgba(52, 28, 28, 0.653);
+}
+.changer_btn {
+  padding: 0.8rem 3rem;
+  font-size: 1.5rem;
+  color: #e0d9d9;
+  background: #324e4c;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.changer_btn:hover {
+  background: #1b3a3991;
+  color: #968475ca;
+  box-shadow: 8px 8px 15px rgba(59, 25, 25, 0.8),
+    inset 10px 5px 15px rgba(27, 10, 10, 0.8);
+}
+.result {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #bbbdc5bd;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.welcome_Code {
+  position: absolute;
+  top: 45vh;
+  font-size: 6rem;
+  color: rgba(57, 57, 116, 0.544);
+  text-align: center;
+  margin-top: 2rem;
+  animation: fadeOut 3s forwards, scaleUp 3s 0s linear 1;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0);
+    color: #382a36;
+  }
+  50% {
+    transform: scale(1.1);
+    color: #7c8641a4;
+  }
+  100% {
+    transform: scale(0.9);
+    color: #54347c75;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .changer h1 {
+    flex: 1;
+    font-size: 1.5rem;
+    color: #19286c;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 900px) {
+  .changer {
+    width: 80vw;
+    height: 40vh;
+    height: 80vh;
+  }
+  .dropdown {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 900px) {
+  .changer {
+    height: auto;
+  }
+  .result {
+    font-size: 1rem;
+    /* margin: 2rem 0; */
+  }
+
+  .from,
+  .to {
+    padding: 5px;
+  }
+}
+/* @media screen and (min-width: 1000px) {
+  .changer {
+  
+  }
+} */

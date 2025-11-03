@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Word Counter</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="wordCounter.css" />
+  </head>
+  <body>
+    <div class="outerBody">
+      <textarea
+        name="text"
+        id="text"
+        placeholder="Enter your text here..."
+      ></textarea>
+      <div class="counter">
+        <section class="counterPart first">
+          <p class="word">Words</p>
+          <p class="length words">0</p>
+        </section>
+        <section class="counterPart second">
+          <p class="word">Characters</p>
+          <p class="length characters">0</p>
+        </section>
+        <section class="counterPart third">
+          <p class="word">Characters (without spaces)</p>
+          <p class="length withoutspaces">0</p>
+        </section>
+        <section class="counterPart fourth">
+          <p class="word">Characters (with spaces)</p>
+          <p class="length withspaces">0</p>
+        </section>
+      </div>
+    </div>
+
+    <!-- DON'T remove it -->
+    <script src="wordCounter.js"></script>
+  </body>
+</html>

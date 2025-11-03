@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Changer</title>
+    <link rel="stylesheet" href="currencyChanger.css" />
+  </head>
+  <body>
+    <div class="welcome_Code">Welcome to Currency Changer</div>
+    <div class="changer" style="display: none">
+      <header>
+        <h1>Currency Changer</h1>
+        <p class="entry_para">Enter your amount ☺</p>
+      </header>
+      <form class="formInput">
+        <div class="amount_Div">
+          <input type="number" value="1" title="Amount you want to change " />
+        </div>
+        <div class="dropdown">
+          <div class="from">
+            <img src="https://flagsapi.com/BE/flat/64.png" class="flag" />
+            <select class="changer_select" name="from_Selector"></select>
+          </div>
+          <div class="image_container">
+            <img src="arrow.jpg" alt=" arrow" class="arrow" />
+          </div>
+          <div class="to">
+            <img src="https://flagsapi.com/IN/flat/64.png" class="flag" />
+            <select class="changer_select" name="to_Selector"></select>
+          </div>
+        </div>
+        <button class="changer_btn">Convert</button>
+        <div class="result">1USD = 88.76INR</div>
+      </form>
+    </div>
+    <script src="currencyChanger.js"></script>
+    <!-- <script src="countryCode.js" type="module"></script> -->
+  </body>
+</html>

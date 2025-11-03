@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(185, 201, 207);
+}
+.outerBody {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.topSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  padding: 1em 5px;
+  border: 2px solid rgb(132, 132, 231);
+  border-radius: 10px;
+  gap: 8px;
+  background-color: white;
+}
+h1 {
+  font-size: 1.7rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(52, 52, 95);
+}
+.topSectionPara {
+  font-size: 0.9rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.mainBody img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 1px solid rgb(132, 132, 231);
+}
+.mainBodyPara {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.starsCard i {
+  color: rgb(211, 211, 205);
+  font-size: 1.4em;
+}
+.starsCard i.active {
+  color: rgb(18, 84, 184);
+}
+.reviewPara {
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 550px) {
+  .reviewPara {
+    font-size: 1.4rem;
+  }
+  .starsCard i {
+    color: rgb(211, 211, 205);
+    font-size: 1.7em;
+  }
+  .mainBodyPara {
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 1.9rem;
+  }
+  .mainBody {
+    width: 40%;
+    height: 40%;
+    padding: 1em 5px;
+    gap: 15px;
+  }
+}

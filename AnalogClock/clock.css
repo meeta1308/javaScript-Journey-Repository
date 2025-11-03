@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(114, 13, 172, 0.676);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.clock {
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4.5em;
+  width: 420px;
+  height: 420px;
+  background-image: url(clockTemplate.png);
+  background-size: cover;
+  background-position: center;
+  /* background-size: 10%; */
+  border-radius: 50%;
+  border: 50px solid rgba(78, 34, 84, 0.474);
+  box-shadow: inset 7px 7px 10px rgb(93, 91, 93),
+    inset -10px -7px 10px rgb(113, 112, 112), 7px 7px 12px rgb(44, 29, 48),
+    -7px -7px 10px rgb(100, 54, 104);
+  -webkit-box-reflect: below 0px
+    linear-gradient(to bottom, transparent, rgba(240, 235, 235, 0.3));
+}
+.minute {
+  width: 150px;
+  height: 150px;
+  /* background-color: #2f5755; */
+}
+.hour {
+  width: 100px;
+  height: 100px;
+  /* background-color: #2f5755; */
+}
+.second {
+  width: 200px;
+  height: 200px;
+  /* background-color: #2f5755; */
+}
+.hour,
+.minute,
+.second {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+.hour::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: black;
+  z-index: 10;
+  transform-origin: bottom center;
+  transition: transform 0.5s ease-in-out;
+}
+.minute::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: black;
+  z-index: 11;
+  transform-origin: bottom center;
+  transition: transform 0.5s ease-in-out;
+}
+.second::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 115px;
+  border-radius: 50%;
+  background-color: black;
+  z-index: 12;
+  transform-origin: bottom center;
+  transition: transform 0.5s ease-in-out;
+}
