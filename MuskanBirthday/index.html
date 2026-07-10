@@ -1,1 +1,70 @@
-hello
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Happy Birthday ❤️</title>
+
+    <link rel="stylesheet" href="muskan.css" />
+  </head>
+
+  <body>
+    <!-- Background Balloons -->
+    <div class="balloons">
+      <div class="balloon b1"></div>
+      <div class="balloon b2"></div>
+      <div class="balloon b3"></div>
+      <div class="balloon b4"></div>
+      <div class="balloon b5"></div>
+    </div>
+
+    <!-- ================= GREETING CARD ================= -->
+
+    <div id="cardPage" class="card">
+      <h1>🎉 Happy Birthday 🎉</h1>
+
+      <h2>CHUDAIL❤️</h2>
+
+      <!-- Photo Slider -->
+
+      <div class="slider">
+        <img src="photo1.jpeg" class="slide active" />
+
+        <img src="photo2.jpeg" class="slide" />
+
+        <img src="photo3.jpeg" class="slide" />
+      </div>
+
+      <p class="message">
+        Happy Birthday to the most amazing friend! ❤️<br /><br />
+
+        May your life always be filled with happiness, success, love and
+        beautiful memories. Thank you for always being there for me. Stay
+        blessed and keep smiling forever. 🥳✨
+      </p>
+      <p class="message">
+        agar mein kabhi kabhi baat na kru to ye mtt samajhna ki mein naraz hu ya frustrate hu, bas kabhi kabhi mein busy ho jati hu ya phir kuch personal cheezein hoti hai jo mein aapko share nahi kar pati, but mein hamesha aapke saath hu aur aap mere liye bahut important ho. ❤️ There are always a reason behind my silence, and I hope you understand that. I love you and I am always here for you. 🥰
+      </p>
+      <button onclick="openSurprise()">🎁 Open Surprise</button>
+    </div>
+
+    <!-- ================= SURPRISE PAGE ================= -->
+
+    <div id="surprisePage" class="surprise">
+      <video id="birthdayVideo" controls>
+        <source src="muskanbirthday.mp4" type="video/mp4" />
+      </video>
+
+      <h2 class="videoMessage">
+        ❤️ Happy Birthday Once Again ❤️<br />
+
+        May all your dreams come true. You are the best among the rest. 🎂🥳
+      </h2>
+
+      <button onclick="goBack()">⬅ Back</button>
+    </div>
+
+    <script src="muskan.js"></script>
+  </body>
+</html>
